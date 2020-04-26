@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    image: centos
+    container_name: nginx
+    networks:
+      - test_net
+    tty: true
+  db:
+    image: centos
+    container_name: mysql
+    networks:
+      - test_net
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+    tty: true
+networks:
+  test_net:

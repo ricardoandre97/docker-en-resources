@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    image: my_image
+    container_name: test_cont
+    build:
+      context: build
+      dockerfile: Dockerfile2

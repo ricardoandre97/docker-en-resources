@@ -1,0 +1,3 @@
+FROM nginx:alpine
+
+RUN echo "Overwrite home page" > /usr/share/nginx/html/index.html
