@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:7
 
 ENV var1 1234
 RUN yum -y install httpd 

@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:7
 
 COPY conf/nginx.repo /etc/yum.repos.d/nginx.repo
 
@@ -8,7 +8,7 @@ RUN \
    yum -y install \
      php71u-fpm \
      php71u-common \
-     php71u-cli --enablerepo=ius && yum clean all
+     php71u-cli --enablerepo=ius-archive && yum clean all
 
 RUN mkdir /nginx_php
 
