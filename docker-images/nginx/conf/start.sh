@@ -2,7 +2,7 @@
 
 # Starting php
 echo "*** Starting php"
-/usr/sbin/php-fpm
+mkdir -p /run/php-fpm && /usr/sbin/php-fpm -c /etc/php/fpm
 
 
 # Start nginx
